@@ -1,0 +1,100 @@
+/* General Settings */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(to bottom, lightblue 0%, white 100%);
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 110%;
+  letter-spacing: 0.05rem;
+}
+
+main {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5rem !important;
+  cursor: pointer;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+/* Search */
+.input_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 50vw;
+  height: 50px;
+  padding: 0.5rem 1rem !important;
+  border: 1px solid grey !important;
+  border-radius: 30px 0 0 30px !important;
+  box-shadow: none !important;
+  font-size: large !important;
+  outline: none;
+}
+
+@media screen and (min-width: 1024px) {
+  input {
+    width: 515px;
+  }
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  border: 1px solid grey !important;
+  border-radius: 0 30px 30px 0 !important;
+  outline: none;
+}
+
+button:hover {
+  background-color: darkgrey;
+  border: 1px solid darkgrey !important;
+}
+
+button img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(12%) saturate(7445%) hue-rotate(298deg) brightness(133%) contrast(87%);
+}
+
+/* Categories */
+ul {
+  list-style: none;
+  padding: 0;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.category {
+  margin: 0.7rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.progress-bar {
+  height: 1rem;
+  border-radius: 0.25rem;
+}
+
+small a {
+  color: black;
+}
+
+small a:hover {
+  color: grey;
+}
